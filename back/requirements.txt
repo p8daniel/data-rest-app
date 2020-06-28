@@ -1,0 +1,17 @@
+py
+pip
+pytest
+attrs
+pluggy
+packaging
+wcwidth
+click
+peewee
+pyparsing
+six
+setuptools
+psycopg2-binary
+Flask
+Flask-RESTful
+Flask-Cors
+gunicorn

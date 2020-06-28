@@ -1,19 +1,12 @@
-version: '2'
+version: '3.7'
 
 services:
   database:
-    image: postgres:10
+    image: postgres:12
     environment:
-      - POSTGRES_USER=metron_test
-      - POSTGRES_PASSWORD=metron_test
+      - POSTGRES_USER=techtest_db
+      - POSTGRES_PASSWORD=techtest_db
     volumes:
       - ./volumes/database:/var/lib/postgresql/data
     ports:
       - 5432:5432
-
-  back:
-    build: back/
-    environment:
-      - DB_HOST=database
-    ports:
-      - 8000:8000
