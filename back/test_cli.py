@@ -52,3 +52,7 @@ def test_techtest_cli():
                            ['add', 'character', 'Person1', '"-45"', '77',
                             'True', '--hat', 'YELLOW'])
     assert result.exit_code == 1
+
+    # Load a sample table with data
+    result = runner.invoke(cli, ['load', 'data', 'datatable.csv'])
+    assert result.exit_code == 0
